@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardElevation="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridUnitUI"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/unitImg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/albNmUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="18dp"
+            android:paddingTop="5dp"
+            android:text="Camera"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/countImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:text="23 images"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

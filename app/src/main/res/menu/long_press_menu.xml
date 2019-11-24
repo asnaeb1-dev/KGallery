@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_select_all"
+        android:orderInCategory="100"
+        android:title="Select all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_deselect_all"
+        android:orderInCategory="100"
+        android:title="Deselect all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/rotateLeft"
+        android:orderInCategory="100"
+        android:title="Rotate Left"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/rotateRight"
+        android:orderInCategory="100"
+        android:title="Rotate Right"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/collage"
+        android:orderInCategory="100"
+        android:title="Collage"
+        app:showAsAction="never" />
+</menu>

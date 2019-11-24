@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/inst_clus_back">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_share_black_24dp"
+            android:padding="15dp"
+            android:id="@+id/shareIns"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/ic_delete_black_24dp"
+            android:padding="15dp"
+            android:id="@+id/deleteIns"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/slideIns"
+            android:src="@drawable/ic_slideshow_black_24dp"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/ic_photo_album_white_24dp"
+            android:padding="15dp"
+            android:id="@+id/addIns"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

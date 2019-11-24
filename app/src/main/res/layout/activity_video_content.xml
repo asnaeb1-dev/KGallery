@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/my_gradient">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/my_gradient"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/col_toolbar_layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:title="Photos"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbarGrid">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarGrid_video"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:elevation="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.abhigyan.user.galleryapp.ExoPlayerRecyclerView
+            android:id="@+id/recycler_view_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.abhigyan.user.galleryapp.ExoPlayerRecyclerView>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
